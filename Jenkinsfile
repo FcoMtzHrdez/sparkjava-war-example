@@ -1,5 +1,5 @@
 pipeline{
-  agent any
+  agent 'francisco'
   stages{
     stage ('Build'){
       steps{
