@@ -5,8 +5,7 @@ pipeline{
       steps{
         
         echo "do something"
-        pwd
-        ls -l
+        echo "inicia build"
         
       }
     }
