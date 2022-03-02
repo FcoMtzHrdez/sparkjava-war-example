@@ -3,9 +3,11 @@ pipeline{
   stages{
     stage ('Build'){
       steps{
-        
-        echo "do something"
+        sh'''
         echo "inicia build"
+        mvn clean install
+        '''
+        
         
       }
     }
