@@ -3,7 +3,11 @@ pipeline{
   stages{
     stage ('Build'){
       steps{
+        
         echo "do something"
+        pwd
+        ls -l
+        
       }
     }
     stage ('test'){
