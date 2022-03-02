@@ -18,7 +18,10 @@ pipeline{
     }
     stage ('Deploy'){
       steps{
-        echo "do something"
+        echo "haciendo despliegue"
+        sh'''
+        docker cp /root/workspace/Francisco_academia/tuberia_prueba/target/sparkjava-hello-world-1.0.war tomcat://usr/local/tomcat/webapps
+        '''
       }
     }
   }
